@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.eventos {
+	height: auto;
+	margin: 0;
+}
+
+.Titulo-seção {
+	margin-top: -12%;
+	color: #000000;
+	font-size: 60px;
+	font-family: "Bebas Neue", sans-serif;
+	font-style: normal;
+}
+
+h1 {
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.botao-filtro {
+	max-width: 1400px;
+	min-width: 350px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* background: #25292d; */
+}
+
+.btn-filtro {
+margin-top: 3PX;
+	background: #5c5c5c;
+	color: white;
+	padding: 15px;
+	font-size: large;
+	border: none;
+	margin: 10px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.filter {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin-bottom: 45px;
+	flex-wrap: wrap;
+}
+
+.itens {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.itens img {
+	width: 350px;
+	height: 350px;
+	padding: 15px;
+}
+
+@media screen and (max-width: 1030px) {
+	.Titulo-seção {
+		margin-top: 0;
+	}
+	.btn-filtro {
+		padding: 10px;
+		margin: 3px;
+		font-size: 24px;
+	}
+	.botao-filtro {
+		max-width:1030px;
+	}
+	/* .filter {
+		flex-direction: column;
+	} */
+	.itens img {
+		width: 250px;
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.Titulo-seção {
+		font-size: 40px;
+	}
+	.btn-filtro {
+		padding: 7px;
+		margin: 3px;
+		font-size: 20px;
+	}
+	.botao-filtro {
+		max-width: 800px;
+	}
+	.filter {
+		flex-wrap:wrap ;
+	}
+	.itens img {
+		width: 200px;
+		height: 200px;
+	}
+}
